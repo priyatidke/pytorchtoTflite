@@ -1,6 +1,7 @@
 # pytorchtoTflite
-file conversion, pytorch to tensorflow lite
+
 Task 1: 
+
 Convert the Pytorch model from this Repo | Google Drive to TensorFlow Lite model
 
 Steps to convert the model:
@@ -8,10 +9,14 @@ Steps to convert the model:
 
 
 1) PyTorch Model to ONNX Model
+
 ONNX: Open Neural Network Exchange (ONNX) is an open format built to represent machine learning models. The best thing about ONNX is interoperability.
-Define SuperResolutionNet Model.
-Initialize the model with the pretrained weights.
-The Pytorch exporter can trace the model and save it to an ONNX file.
+
+  a. Define SuperResolutionNet Model.
+  
+  b. Initialize the model with the pretrained weights.
+  
+  c. The Pytorch exporter can trace the model and save it to an ONNX file.
 
  2) ONNX Model to TensorFlow Model
  
@@ -31,29 +36,29 @@ The Pytorch exporter can trace the model and save it to an ONNX file.
 
 Challenges:
 
-Versions issue
+i. Versions issue
 
-How to Define The Base Model
+ii. How to Define The Base Model
 
-Missing keys & unexpected keys in state_dict when loading self trained model
+iii. Missing keys & unexpected keys in state_dict when loading self trained model
 
-Load tensorflow model for conversion
+iv. Load tensorflow model for conversion
 
-Select way to convert a TensorFlow model into TensorFlow Lite model
+v. Select way to convert a TensorFlow model into TensorFlow Lite model
 
-Issues regarding Flex Ops
+vi. Issues regarding Flex Ops
 
 Resolved:
 
-Installing supported Versions
+i. Installing supported Versions
 
-Select to define SuperResolutionNet Model
+ii. Select to define SuperResolutionNet Model
 
-Set strict=False for Missing keys & unexpected keys in state_dict when loading self trained model
+iii. Set strict=False for Missing keys & unexpected keys in state_dict when loading self trained model
 
-Used tf.saved_model.load() method to load tensorflow model
+iv. Used tf.saved_model.load() method to load tensorflow model
 
-Used concrete function
+v. Used concrete function
 
 
 
