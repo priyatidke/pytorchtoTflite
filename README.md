@@ -20,26 +20,39 @@ The Pytorch exporter can trace the model and save it to an ONNX file.
        b. Exporting to TensorFlow graphs
  
 3) TensorFlow Model to TFLite Model
+
        a. Load TensorFlow model from saved_model
+       
        b. Create Concrete Function
+       
        c. Load the concrete function into the TFLiteConverter
+       
        d. Convert and Store the Model
 
 Challenges:
 
 Versions issue
+
 How to Define The Base Model
+
 Missing keys & unexpected keys in state_dict when loading self trained model
+
 Load tensorflow model for conversion
+
 Select way to convert a TensorFlow model into TensorFlow Lite model
+
 Issues regarding Flex Ops
 
 Resolved:
 
 Installing supported Versions
+
 Select to define SuperResolutionNet Model
+
 Set strict=False for Missing keys & unexpected keys in state_dict when loading self trained model
+
 Used tf.saved_model.load() method to load tensorflow model
+
 Used concrete function
 
 
