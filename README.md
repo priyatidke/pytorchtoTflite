@@ -14,7 +14,9 @@ Initialize the model with the pretrained weights.
 The Pytorch exporter can trace the model and save it to an ONNX file.
 
  2) ONNX Model to TensorFlow Model
+ 
        a. Load the ONNX file and import it to Tensorflow
+       
        b. Exporting to TensorFlow graphs
  
 3) TensorFlow Model to TFLite Model
